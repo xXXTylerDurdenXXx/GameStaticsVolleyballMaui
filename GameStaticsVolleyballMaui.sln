@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStaticsVolleyballMaui", "GameStaticsVolleyballMaui\GameStaticsVolleyballMaui.csproj", "{B7DD6CEB-52B3-40A3-827C-99489393111E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DD6CEB-52B3-40A3-827C-99489393111E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DD6CEB-52B3-40A3-827C-99489393111E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DD6CEB-52B3-40A3-827C-99489393111E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B7DD6CEB-52B3-40A3-827C-99489393111E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DD6CEB-52B3-40A3-827C-99489393111E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51694007-7989-4026-ABF9-BCBCDFF0D344}
+	EndGlobalSection
+EndGlobal
