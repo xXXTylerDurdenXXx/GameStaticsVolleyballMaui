@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameStaticsVolleyballMaui.View.RegisterPage"
+             Title="RegisterPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <Label Text="Регистрация"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="Имя пользователя"
+                   Text="{Binding Username}" />
+
+            <Entry Placeholder="Email"
+                   Keyboard="Email"
+                   Text="{Binding Email}" />
+
+            <Entry Placeholder="Пароль"
+                   IsPassword="True"
+                   Text="{Binding Password}" />
+
+            <Button Text="Зарегистрироваться"
+                    Command="{Binding RegisterCommand}" />
+
+            <Button Text="Назад"
+                    Clicked="OnBackClicked"
+                    BackgroundColor="LightGray" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

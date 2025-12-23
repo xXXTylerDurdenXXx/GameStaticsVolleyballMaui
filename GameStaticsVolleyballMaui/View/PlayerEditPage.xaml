@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameStaticsVolleyballMaui.View.PlayerEditPage"
+             Title="Игрок">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <Entry Placeholder="ФИО"
+                   Text="{Binding FullName}" />
+
+            <Entry Placeholder="Номер"
+                   Keyboard="Numeric"
+                   Text="{Binding Number}" />
+
+            <Entry Placeholder="Рост"
+                   Keyboard="Numeric"
+                   Text="{Binding Height}" />
+
+            <Entry Placeholder="Вес"
+                   Keyboard="Numeric"
+                   Text="{Binding Width}" />
+
+            <Entry Placeholder="Команда"
+                   Text="{Binding TeamName}" />
+
+            <Entry Placeholder="Позиция"
+                   Text="{Binding PositionName}" />
+
+            <Button Text="Сохранить"
+                    Command="{Binding SaveCommand}" />
+
+            <Button Text="Назад"
+                    Command="{Binding BackCommand}"
+                    BackgroundColor="LightGray" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

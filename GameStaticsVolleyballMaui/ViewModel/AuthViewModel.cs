@@ -22,7 +22,7 @@ namespace GameStaticsVolleyballMaui.ViewModel
             RegisterCommand = new Command(async () => await RegisterAsync());
         }
 
-        public string UsernameOrEmail { get; set; }
+        public string LoginOrEmail { get; set; }
         public string Password { get; set; }
 
         public string Username { get; set; }
@@ -37,7 +37,7 @@ namespace GameStaticsVolleyballMaui.ViewModel
             {
                 await _authService.LoginAsync(new LoginRequestDto
                 {
-                    LoginOrEmail = UsernameOrEmail,
+                    LoginOrEmail = LoginOrEmail,
                     Password = Password
                 });
 

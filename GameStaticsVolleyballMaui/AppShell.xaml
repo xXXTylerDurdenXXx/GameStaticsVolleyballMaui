@@ -4,12 +4,29 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GameStaticsVolleyballMaui"
+    xmlns:view="clr-namespace:GameStaticsVolleyballMaui.View"
     Shell.FlyoutBehavior="Disabled"
     Title="GameStaticsVolleyballMaui">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Route="LoginPage"
+                  ContentTemplate="{DataTemplate view:LoginPage}" />
+
+    <ShellContent Route="RegisterPage"
+                  ContentTemplate="{DataTemplate view:RegisterPage}" />
+
+    <ShellContent Route="MainPage"
+                  ContentTemplate="{DataTemplate local:MainPage}" />
+
+    <ShellContent Route="PlayersPage"
+                  ContentTemplate="{DataTemplate view:PlayersPage}" />
+
+    <ShellContent Route="PlayerEditPage"
+                  ContentTemplate="{DataTemplate view:PlayerEditPage}" />
+
+    <ShellContent Route="TeamsPage"
+                  ContentTemplate="{DataTemplate view:TeamsPage}" />
+
+    <ShellContent Route="TeamEditPage"
+                  ContentTemplate="{DataTemplate view:TeamEditPage}" />
 
 </Shell>

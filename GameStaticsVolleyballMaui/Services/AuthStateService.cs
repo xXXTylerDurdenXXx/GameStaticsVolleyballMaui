@@ -9,7 +9,7 @@ namespace GameStaticsVolleyballMaui.Services
     public class AuthStateService
     {
         public string Token { get; set; }
-        public string Username { get; set; }
+        public string Login { get; set; }
         public string Role { get; set; }
 
         public bool IsAuthenticated => !string.IsNullOrEmpty(Token);
@@ -17,7 +17,7 @@ namespace GameStaticsVolleyballMaui.Services
         public void Logout()
         {
             Token = null;
-            Username = null;
+            Login = null;
             Role = null;
         }
     }
